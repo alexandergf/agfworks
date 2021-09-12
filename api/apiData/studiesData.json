@@ -1,0 +1,22 @@
+{
+    "studies": [
+        {
+            "year": "2014",
+            "title": "Grado en Multimedia",
+            "subtitle": "Centre de la Imatge i la Tecnologia Multimèdia | CITM (UPC)",
+            "body": "Grado en Multimedia, desarrollo de páginas web, contenido digital/multimedia y recursos informáticos."
+        },
+        {
+            "year": "2018",
+            "title": "CFGS DAW",
+            "subtitle": "IET Institut Escola del Treball",
+            "body": "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web"
+        },
+        {
+            "year": "2020",
+            "title": "Fullstack Javascript",
+            "subtitle": "Fundación Esplai",
+            "body": "Desarrollo Web Full Stack JavaScript (285h). \n - Les TIC. \n - Tecnologías y diseño web, HTML y CSS. \n - Algoritmos y programas. Programación Backend. \n - Almacenamiento de datos. \n - Interación con el usuario. Frontend con ReactJS. \n - Proyecto. Integración Frontend / Backend."
+        }
+    ]
+}

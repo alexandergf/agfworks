@@ -1,0 +1,12 @@
+import { makeStyles } from "@material-ui/core/styles";
+
+export const useStyles = makeStyles((theme) => ({
+    mainContainer: {
+        background: "#233",
+        height: "100%",
+    },
+    cardContainer: {
+        maxWidth: 345,
+        margin: "3rem auto",
+    },
+}));

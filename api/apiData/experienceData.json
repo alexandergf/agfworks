@@ -1,0 +1,16 @@
+{
+    "experience": [
+        {
+            "year": "2020",
+            "title": "Estudiante en prácticas",
+            "subtitle": "Jrsystems",
+            "body": "Durante este periodo se desarrollo una aplicación web responsiva con las siguientes tecnologías: SpringBoot MVC, Java, PostgresSQL, HTML, CSS y JavaScript."
+        },
+        {
+            "year": "2021",
+            "title": "Desarrollador de front-end",
+            "subtitle": "Movetia",
+            "body": "Desarrollo del apartado front-end para diversas aplicaciones utilizando Angular."
+        }
+    ]
+}
