@@ -1,4 +1,5 @@
-const api_url = 'http://localhost:3000/experience/';
+import { BACKEND } from "../consts/backend";
+const api_url = BACKEND+'experience/';
 
 export default class ExperienceController {
     static getInfo = () => {

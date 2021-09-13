@@ -12,22 +12,5 @@ export const useStyles = makeStyles((theme) => ({
       title: {
         color: lightBlue[100],
         textDecoration: 'none'
-      },
-      menuSliderContainer: {
-        width: 250,
-        background: "#DB7C32",
-        height: "100%",
-      },
-      avatar: {
-        display: "block",
-        margin: "0.5rem auto",
-        width: theme.spacing(13),
-        height: theme.spacing(13),
-      },
-      listItem: {
-        color: "white",
-      },
-      divider: {
-        backgroundColor: 'white'
       }
 }));

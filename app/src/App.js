@@ -17,10 +17,10 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/experience" component={Experience} />
-        <Route exact path="/studies" component={Studies} />
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/experiencia" component={Experience} />
+        <Route exact path="/estudios" component={Studies} />
+        <Route exact path="/proyectos" component={Projects} />
+        <Route exact path="/contacto" component={Contact} />
       </Switch>
     </React.Fragment>
   );

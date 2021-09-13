@@ -1,4 +1,5 @@
-const api_url = 'http://localhost:3000/email/contact-email';
+import { BACKEND } from "../consts/backend";
+const api_url = BACKEND+'email/contact-email';
 
 export default class EmailController {
     static sendEmail = (dataEmail) => {

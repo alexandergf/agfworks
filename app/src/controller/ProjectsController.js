@@ -1,4 +1,5 @@
-const api_url = 'http://localhost:3000/projects/';
+import { BACKEND } from "../consts/backend";
+const api_url = BACKEND+'projects/';
 
 export default class ProjectsController {
     static getInfo = () => {
