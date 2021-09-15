@@ -1,29 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { useStyles } from './styles/ExperienceStyles';
-import ExperienceService from "../services/ExperienceService";
 import BackgroundService from "../services/BackgroundService";
+import useExperience from "../hooks/useExperience";
 
 const Experience = () => {
-    const [experience,setExperience] = useState([]);
-
+    const experience = useExperience();
     const classes = useStyles();
 
     BackgroundService.changeBackground('#233');
-
-    useEffect(() => {
-      ExperienceService.getExperience()
-        .then(data => {
-          if(data.ok){
-            setExperience([...data.resp.experience]);
-          }
-        })
-        .catch(error => {
-          setExperience(["No se ha podido recuperar la información"]);
-        });
-      
-    },[]);
 
     const ListItems = () => {           
       return (

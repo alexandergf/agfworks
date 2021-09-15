@@ -1,29 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { useStyles } from './styles/StudiesStyles';
-import StudiesService from '../services/StudiesService';
 import BackgroundService from '../services/BackgroundService';
+import useStudies from '../hooks/useStudies';
 
 const Studies = () => {
-    const [studies, setStudies] = useState([]);
-
+    const studies = useStudies();
     const classes = useStyles();
 
     BackgroundService.changeBackground('#233');
-
-    useEffect(() => {
-        StudiesService.getStudies()
-          .then(data => {
-            if(data.ok){
-                setStudies([...data.resp.studies]);
-            }
-          })
-          .catch(error => {
-            setStudies(["No se ha podido recuperar la información"]);
-          });
-        
-    },[]);
 
     const ListItems = () => {
         return(

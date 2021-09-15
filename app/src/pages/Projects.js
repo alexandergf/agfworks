@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -12,31 +12,14 @@ import { useStyles } from './styles/ProjectsStyles';
 
 import project1 from "../assets/images/dise.jpg";
 import wip from '../assets/images/wip.gif'
-import ProjectsService from '../services/ProjectsService';
 import BackgroundService from '../services/BackgroundService';
-
-
+import useProjects from '../hooks/useProjects';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
+  const projects = useProjects();
   const classes = useStyles();
 
   BackgroundService.changeBackground('#233');
-
-  useEffect(() => {
-    ProjectsService.getProjects()
-      .then(data => {
-        if(data.ok){
-            setProjects([...data.resp.projects]);
-        }
-      })
-      .catch(error => {
-        setProjects(["No se ha podido recuperar la información"]);
-      });
-  },[]);
-
-  
 
   const ListItems = () => {
     return(
