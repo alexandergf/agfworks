@@ -8,7 +8,7 @@ import Send from "@material-ui/icons/Send";
 import EmailService from '../services/EmailService';
 import { useStyles, InputField } from './styles/ContactStyles';
 import BackgroundService from "../services/BackgroundService";
-import Particles from './Particles';
+import Particles from '../components/Particles';
 
 
 const Contact = () => {

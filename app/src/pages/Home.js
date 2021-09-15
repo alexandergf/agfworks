@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../components/Header';
 import imageBackground from '../assets/images/back.gif';
 import { useStyles } from './styles/HomeStyles';
 import BackgroundService from '../services/BackgroundService';

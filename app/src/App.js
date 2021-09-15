@@ -2,12 +2,12 @@ import React from 'react';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Route, Switch } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Home from './pages/Home';
 import "./App.css";
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Studies from './components/Studies';
-import Projects from './components/Projects';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import Studies from './pages/Studies';
+import Projects from './pages/Projects';
 
 function App() {
   
