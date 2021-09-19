@@ -1,6 +1,5 @@
 import ExperienceController from "../controller/ExperienceController";
 
-
 export default class ExperienceService {
     
     static getExperience = () => {       

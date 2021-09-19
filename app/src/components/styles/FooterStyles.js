@@ -1,8 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
     bottomNavContainer: {
-      background: "#222",
+      background: "#222!important",
     },
     root: {
       "& .MuiSvgIcon-root": {

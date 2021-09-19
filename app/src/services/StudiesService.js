@@ -1,6 +1,5 @@
 import StudiesController from "../controller/StudiesController";
 
-
 export default class StudiesService {
     
     static getStudies = () => {       

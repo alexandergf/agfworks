@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "Home": "Inicio",
+        "Experience": "Experiencia",
+        "Studies": "Estudios",
+        "Projects": "Proyectos",
+        "Contact": "Contacto"
+    },
+    "experience": {
+        "title": "",
+        "finalYear": "Now"
+    }
+}

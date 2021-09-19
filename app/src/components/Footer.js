@@ -1,11 +1,11 @@
 import React from 'react'
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import GitHub from "@material-ui/icons/GitHub";
-import LinkedIn from "@material-ui/icons/LinkedIn";
-import Instagram from "@material-ui/icons/Instagram";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import GitHub from "@mui/icons-material/GitHub";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import Instagram from "@mui/icons-material/Instagram";
 import { useStyles } from './styles/FooterStyles';
-import Link from '@material-ui/core/Link';
+import Link from '@mui/material/Link';
 
 const Footer = () => {
     const classes = useStyles();

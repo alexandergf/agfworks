@@ -1,6 +1,5 @@
 import ProjectsController from "../controller/ProjectsController";
 
-
 export default class ProjectsService {
     
     static getProjects = () => {       

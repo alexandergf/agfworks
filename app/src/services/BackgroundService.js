@@ -1,5 +1,3 @@
-
-
 export default class BackgroundService {
 
     static changeBackground = (background) => {

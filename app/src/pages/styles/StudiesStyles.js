@@ -1,6 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
+import { createTheme } from "@mui/material/styles";
 
-export const useStyles = makeStyles((theme) => ({
+const theme = createTheme();
+export const useStyles = makeStyles(({
     mainContainer: {
         background: "#233",
         paddingBottom: "1.5rem"
@@ -68,18 +70,18 @@ export const useStyles = makeStyles((theme) => ({
     timeLineYear: {
         textAlign: "center",
         maxWidth: "9.375rem",
-        margin: "0 3rem 0 auto",
-        fontSize: "1.8rem",
+        margin: "0 3rem 0 auto !important",
+        fontSize: "1.8rem!important",
         color: "#fff",
         background: "tomato",
-        lineHeight: 1,
+        lineHeight: "1!important",
         padding: "0.5rem 1rem",
         "&:before": {
             display: "none",
         },
         [theme.breakpoints.up("md")]: {
             textAlign: "center",
-            margin: "0 auto",
+            margin: "0 auto!important",
             "&:nth-of-type(2n)": {
                 float: "none",
                 margin: "0 auto",

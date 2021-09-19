@@ -1,7 +1,7 @@
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
+import { makeStyles, withStyles } from "@mui/styles";
+import TextField from "@mui/material/TextField";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(({
     contactContainer: {
         display: "flex",
         justifyContent: "flex-start",
@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
     heading: {
         color: "white",
         textAlign: "left",
-        marginBottom: "1rem",
-        marginTop: "1rem"
+        marginBottom: "1rem!important",
+        marginTop: "1rem!important"
     },
     form: {
         backgroundColor: "#121212",
@@ -26,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
     },
     button: {
-        marginTop: "1rem",
+        marginTop: "1rem!important",
         color: "white",
         borderColor: "#13808F",
     },
     field: {
-        margin: "1rem 0rem",
+        margin: "1rem 0rem!important",
     },
 }));
 

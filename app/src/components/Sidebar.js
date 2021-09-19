@@ -3,22 +3,24 @@ import { Link } from "react-router-dom";
 import SidebarService from '../services/SidebarService';
 import { useStyles } from './styles/SidebarStyles';
 
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Avatar from "@material-ui/core/Avatar";
-import Divider from "@material-ui/core/Divider";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
+import { useTranslation } from 'react-i18next';
 
 import avatar from '../assets/images/avatar.png';
-
-import Box from "@material-ui/core/Box";
 
 const Sidebar = ({setOpenNav}) => {
 
     const menuItems = SidebarService.getMenuItems();
 
     const classes = useStyles();
+
+    const {t} = useTranslation('global');
 
     return (
         <Box className={classes.menuSliderContainer} component="div">
@@ -37,7 +39,7 @@ const Sidebar = ({setOpenNav}) => {
                 <ListItemIcon className={classes.listItem}>
                 {item.listIcon}
                 </ListItemIcon>
-                <ListItemText primary={item.listText} />
+                <ListItemText primary={t("sidebar."+item.listText)} />
             </ListItem>
             ))}
         </List>

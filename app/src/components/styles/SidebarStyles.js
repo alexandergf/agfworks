@@ -1,6 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
+import { createTheme } from "@mui/material/styles";
 
-export const useStyles = makeStyles((theme) => ({
+const theme = createTheme();
+export const useStyles = makeStyles(() => ({
       menuSliderContainer: {
         width: 250,
         background: "#DB7C32",

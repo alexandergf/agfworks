@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
 import backContact from '../assets/images/backContact.png';
-import Send from "@material-ui/icons/Send";
+import Send from "@mui/icons-material/Send";
 import EmailService from '../services/EmailService';
 import { useStyles, InputField } from './styles/ContactStyles';
 import BackgroundService from "../services/BackgroundService";
