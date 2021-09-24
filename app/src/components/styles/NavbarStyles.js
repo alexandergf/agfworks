@@ -36,6 +36,11 @@ export const useStyles = makeStyles((theme) => ({
         flexDirection: "row",
         alignItems: "center"
       },
+      right: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "end"
+      },
       toogleButtons: {
         padding: "0.3rem 0.5rem !important"
       },

@@ -7,14 +7,13 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Dehaze from "@mui/icons-material/Dehaze";
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import ToggleButton from '@mui/material/ToggleButton';
 
 import Footer from './Footer';
 import { useStyles } from './styles/NavbarStyles';
 import Sidebar from './Sidebar';
 
-import { useTranslation } from 'react-i18next';
+import SwitchThemeMode from './SwitchThemeMode';
+import SwitchLanguageMode from './SwitchLanguageMode';
 
 const Navbar = () => {
 
@@ -22,12 +21,6 @@ const Navbar = () => {
 
     const classes = useStyles();
     
-    const {i18n} = useTranslation();
-
-    const handleChangeLanguage = (event) => {
-        i18n.changeLanguage(event.target.value);
-      };
-
     return (
         <React.Fragment>
           <Box component="nav">
@@ -41,16 +34,10 @@ const Navbar = () => {
                         <Link to='/' className={classes.title}>Alexander</Link>
                     </Typography>
                   </div>
-                  <ToggleButtonGroup
-                    className={classes.toogleButtonsGroup}
-                    color="primary"
-                    value={i18n.language}
-                    exclusive
-                    onChange={handleChangeLanguage}
-                    >
-                    <ToggleButton value='es' className={classes.toogleButtons}>ES</ToggleButton>
-                    <ToggleButton value='en' className={classes.toogleButtons}>EN</ToggleButton>
-                </ToggleButtonGroup>
+                  <div className={classes.right}>
+                    <SwitchThemeMode />
+                    <SwitchLanguageMode />
+                  </div>
               </Toolbar>
               </AppBar>
           </Box>

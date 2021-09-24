@@ -1,18 +1,25 @@
-import EmailController from '../controller/EmailController';
-import { modalSuccess, modalError } from '../components/modals/EmailModals';
+import { BACKEND } from "../consts/backend";
+const api_url = BACKEND+'email/contact-email';
 
 export default class EmailService {
     
     static enviarMail = (dataEmail) => {
-        EmailController.sendEmail(dataEmail)
-        .then(resp => {
-            if(resp.ok){
-                modalSuccess();
-            }else{
-                modalError();
-            }
-        })
-        .catch(error => modalError())    
+            let conf = {
+                method: "POST",
+                headers: new Headers({
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Host': 'Host'
+                }),
+                body: JSON.stringify(dataEmail)
+            };
+            return new Promise((resolve, reject) => {
+            fetch(api_url, conf)
+                .then(resp => {
+                    resolve(resp.ok);
+                })
+            .catch(error => reject(error))   
+        }); 
     }
 
 }

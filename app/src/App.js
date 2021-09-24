@@ -9,17 +9,10 @@ import Contact from './pages/Contact';
 import Studies from './pages/Studies';
 import Projects from './pages/Projects';
 
-import { useTranslation } from 'react-i18next';
-
 function Traducciones() {
-  const {t, i18n} = useTranslation('global');
   return (
   <React.Fragment >
       <CssBaseline />
-      {/* <h1>{t('title')}</h1>
-      <p>Idioma actual: {i18n.language}</p>
-      <button onClick={()=> {i18n.changeLanguage('es')}}>ES</button>
-      <button onClick={()=> {i18n.changeLanguage('en')}}>EN</button> */}
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
